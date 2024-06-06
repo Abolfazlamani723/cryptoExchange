@@ -48,9 +48,9 @@
             <Button layoutX="296.0" layoutY="351.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="106.0" text="Forgot Password" />
          </children>
       </AnchorPane>
-      <ImageView fitHeight="418.0" fitWidth="240.0" layoutX="596.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="418.0" fitWidth="167.0" layoutX="596.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../Downloads/image_2024-06-06_14-44-54%20(1).png" />
+            <Image url="@../Image/coins.png" />
          </image>
       </ImageView>
    </children>
