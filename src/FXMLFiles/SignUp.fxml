@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="879.0" style="-fx-background-color: brown;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SignUpController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="889.0" style="-fx-background-color: brown;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SignUpController">
    <children>
       <AnchorPane layoutX="78.0" layoutY="50.0" prefHeight="500.0" prefWidth="550.0" style="-fx-background-color: #ffffff;">
          <children>
@@ -94,7 +94,7 @@
       </AnchorPane>
       <ImageView fitHeight="500.0" fitWidth="200.0" layoutX="629.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../rightSideOfSignUp_2.png" />
+            <Image url="@../Image/coins.png" />
          </image>
       </ImageView>
    </children>
