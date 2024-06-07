@@ -14,7 +14,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #a55511;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #955511;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginController">
    <children>
       <AnchorPane layoutX="145.0" layoutY="141.0" prefHeight="417.0" prefWidth="450.0" style="-fx-background-color: #01579B;">
          <children>
@@ -34,10 +34,10 @@
                 <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <TextField fx:id="usernameTextField" onKeyPressed="#usernameCheck" prefHeight="28.0" prefWidth="297.0" promptText="Username" GridPane.columnIndex="1" />
+                  <TextField fx:id="usernameTextField" onKeyPressed="#checkUsername" prefHeight="28.0" prefWidth="297.0" promptText="Username" GridPane.columnIndex="1" />
                   <FontAwesomeIcon glyphName="USER" size="30" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                   <FontAwesomeIcon glyphName="LOCK" size="30" text="" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-                  <PasswordField fx:id="passwordPasswordField" onKeyPressed="#passwordCheck" prefHeight="26.0" prefWidth="312.0" promptText="Password" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <PasswordField fx:id="passwordPasswordField" onKeyPressed="#checkPassword" prefHeight="26.0" prefWidth="312.0" promptText="Password" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                </children>
             </GridPane>
             <Label alignment="CENTER" layoutX="154.0" layoutY="209.0" prefHeight="18.0" prefWidth="141.0" text="Enter CAPTCHA Code:" />
