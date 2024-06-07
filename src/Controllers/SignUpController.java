@@ -1,60 +1,82 @@
 package Controllers;
 
-import javafx.event.ActionEvent;
+import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.input.MouseEvent;
+import javafx.event.ActionEvent;
 
 public class SignUpController {
     @FXML
-    private TextField 
-            firstNameTextField,
-            lastNameTextField,
-            usernameTextField,
-            emailTextField,
-            phoneNumberTextField,
-            passwordTextField,
-            repeatPasswordTextField,
-            captchaTextField;
+    private Label firstNameMessage, lastNameMessage, usernameMessage, emailMessage, phoneNumberMessage, passwordMessage, repeatPasswordMessage, captchaMessage, profileImageName;
 
-    @FXML 
-    private Label
-            firstNameMessage,
-            lastNameMessage,
-            usernameMessage,
-            emailMessage,
-            phoneNumberMessage,
-            passwordMessage,
-            repeatPasswordMessage,
-            captchaMessage,
-            profileImageName;
-    
-    @FXML 
-    private Button
-            pickFileButton,
-            createMyAccountButton;
-    
     @FXML
-    public void checkEmail(KeyEvent event) {
-        // String email = emailTextField.getText();
-        // if (email.isEmpty() || !email.contains("@")) {
-        //     emailMessage.setText("Invalid email format");
-        // } else {
-        //     emailMessage.setText("");
-        // }
-        emailMessage.setText("error");
+    private TextField firstNameTextField, lastNameTextField, usernameTextField, emailTextField, phoneNumberTextField;
+
+    @FXML
+    private PasswordField passwordPasswordField, repeatPasswordPasswordField, captchaCodePasswordField;
+
+    @FXML
+    private Button pickFileButton, createMyAccountButton;
+
+    @FXML
+    private FontAwesomeIcon backIcon;
+
+    @FXML
+    private ImageView captchaImageView;
+
+    @FXML
+    private void checkFirstName(KeyEvent event) {
+        // Implement your logic here
     }
 
     @FXML
-    public void afterPickFile(ActionEvent event) {
-        // Add file picker logic here
-        // Example: profileImageName.setText("Selected: image.png");
+    private void checkUsername(KeyEvent event) {
+        // Implement your logic here
     }
 
     @FXML
-    public void afterCreateMyAccount(ActionEvent event) {
-        
+    private void checkPhoneNumber(KeyEvent event) {
+        // Implement your logic here
+    }
+
+    @FXML
+    private void checkLastName(KeyEvent event) {
+        // Implement your logic here
+    }
+
+    @FXML
+    private void checkEmail(KeyEvent event) {
+        // Implement your logic here
+    }
+
+    @FXML
+    private void checkPassword(KeyEvent event) {
+        // Implement your logic here
+    }
+
+    @FXML
+    private void checkRepeatPassword(KeyEvent event) {
+        // Implement your logic here
+    }
+
+    @FXML
+    private void afterPickFile(ActionEvent event) {
+        // Implement your logic here
+    }
+
+    @FXML
+    private void afterCreateMyAccount(ActionEvent event) {
+        // Implement your logic here
+    }
+
+    @FXML
+    private void afterBack(MouseEvent event) {
+        // Implement your logic here
     }
 }
