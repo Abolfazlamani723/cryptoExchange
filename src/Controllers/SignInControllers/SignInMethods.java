@@ -1,5 +1,8 @@
 package Controllers.SignInControllers;
 
+import javafx.scene.control.Label;
+import javafx.scene.paint.Color;
+
 public class SignInMethods {
 
     public boolean isValid(String input, String regex){
@@ -10,8 +13,8 @@ public class SignInMethods {
         return isValid(input, "^[a-zA-Z]{1,1}[a-zA-Z0-9-_.]{4,63}@[a-zA-Z]+\\.[a-zA-z]+$");
     }
 
-    public boolean isUserNameValid(String input){
-        return isValid(input, "[a-zA-Z]{1,1}[a-zA-Z0-9-_.#$&*%]{2,12}");
+    public boolean isUsernameValid(String input){
+        return isValid(input, "[a-zA-Z]{1,1}[a-zA-Z0-9_]{2,12}");
     }
 
     public boolean isPasswordValid(String input){
@@ -24,5 +27,17 @@ public class SignInMethods {
 
     public boolean isPhoneNumberValid(String input){
         return isValid(input, "^[0-9]{4,10}$");
+    }
+    //-------------------------------------------------
+    public void fillToError(Label label) {
+        Color red = Color.web("#FF6347");
+        label.setTextFill(red);
+    }
+
+    public void toCorrect(Label label) {
+        Color green = Color.web("#7CFC00");
+        label.setTextFill(green);
+
+        label.setText("Valid Input");
     }
 }
