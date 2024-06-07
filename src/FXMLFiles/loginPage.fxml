@@ -44,12 +44,17 @@
             <Button fx:id="loginButton" layoutX="103.0" layoutY="286.0" mnemonicParsing="false" onAction="#afterLogin" prefHeight="35.0" prefWidth="240.0" text="Login" />
             <Button fx:id="signUpButton" layoutX="176.0" layoutY="351.0" mnemonicParsing="false" onAction="#afterSignUp" prefHeight="26.0" prefWidth="106.0" text="Sign up" />
             <Button fx:id="forgetPasswordButton" layoutX="296.0" layoutY="351.0" mnemonicParsing="false" onAction="#afterForgetPassword" prefHeight="26.0" prefWidth="106.0" text="Forgot Password" />
-            <PasswordField fx:id="captchaCodePasswordField" layoutX="168.0" layoutY="236.0" prefHeight="26.0" prefWidth="106.0" promptText="CAPTCHA code" />
+            <PasswordField fx:id="captchaCodePasswordField" layoutX="123.0" layoutY="236.0" prefHeight="26.0" prefWidth="106.0" promptText="CAPTCHA code" />
             <Label layoutX="35.0" layoutY="349.0" text="Not a member">
                <font>
                   <Font size="20.0" />
                </font>
             </Label>
+            <ImageView fitHeight="26.0" fitWidth="106.0" layoutX="260.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Downloads/CAPTCHA_code.png" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
       <ImageView fitHeight="418.0" fitWidth="167.0" layoutX="596.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">

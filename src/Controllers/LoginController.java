@@ -1,5 +1,6 @@
 package Controllers;
 
+import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -22,6 +23,15 @@ public class LoginController {
 
     }      
     public void checkPassword(KeyEvent event){
+
+    }
+    public void afterLogin(ActionEvent event){
+
+    }
+    public void afterSignUp(ActionEvent event){
+
+    }
+    public void afterForgetPassword(ActionEvent event){
         
     }
                         
