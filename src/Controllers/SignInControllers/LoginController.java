@@ -77,6 +77,7 @@ public class LoginController extends SignInMethods{
     public void afterForgetPassword(ActionEvent event){
 
     }
+    
                         
 }
 

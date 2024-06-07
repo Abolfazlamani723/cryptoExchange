@@ -25,6 +25,7 @@ public class ForgetPasswordController extends SignInMethods{
             repeatPawweordPasswordField;
     @FXML 
     private Button submitButton, loginButton;
+    
     @FXML
     private FontAwesomeIcon backIcon;
 
