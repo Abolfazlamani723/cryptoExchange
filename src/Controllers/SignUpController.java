@@ -61,6 +61,11 @@ public class SignUpController {
     }
 
     @FXML
+    private void checkCaptchaCode(ActionEvent event) {
+        // Implement your logic here
+    }
+
+    @FXML
     private void checkRepeatPassword(KeyEvent event) {
         // Implement your logic here
     }
