@@ -1,4 +1,4 @@
-package Controllers;
+package Controllers.SignInControllers;
 
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
 import javafx.fxml.FXML;
@@ -11,7 +11,7 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.event.ActionEvent;
 
-public class SignUpController {
+public class SignUpController extends SignInMethods{
     @FXML
     private Label firstNameMessage, lastNameMessage, usernameMessage, emailMessage, phoneNumberMessage, passwordMessage, repeatPasswordMessage, captchaMessage, profileImageName;
 
@@ -33,16 +33,27 @@ public class SignUpController {
     @FXML
     private void checkFirstName(KeyEvent event) {
         // Implement your logic here
+        String input = firstNameMessage.getText();
+        String regex = "^[a-zA-Z ]{2,12}$";
+        if(!isValid(input, regex)){
+                usernameMessage.setText("Error");
+        }
     }
 
     @FXML
     private void checkUsername(KeyEvent event) {
         // Implement your logic here
+        String input = firstNameMessage.getText();
+        String regex = "^[a-zA-Z ]{2,12}$";
+        if(!isValid(input, regex)){
+                usernameMessage.setText("Error");
+        }
     }
 
     @FXML
     private void checkPhoneNumber(KeyEvent event) {
         // Implement your logic here
+        
     }
 
     @FXML

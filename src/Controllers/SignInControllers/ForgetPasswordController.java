@@ -1,4 +1,4 @@
-package Controllers;
+package Controllers.SignInControllers;
 
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
 import javafx.fxml.FXML;
@@ -8,7 +8,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 
-public class ForgetPasswordController {
+public class ForgetPasswordController extends SignInMethods{
     @FXML
     private Label 
             emailMessage, 
@@ -29,7 +29,10 @@ public class ForgetPasswordController {
     private FontAwesomeIcon backIcon;
 
     public void checkEmail() {
-
+        String input = emailTextField.getText();
+        if(!isEmailValid(input)){
+            emailMessage.setText("Error");
+    }
     }
 
     public void checkCode() {
